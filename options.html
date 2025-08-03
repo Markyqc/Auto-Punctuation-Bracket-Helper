@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8" />
+        <title>Auto Punctuation & Bracket Helper - Options</title>
+        <style>
+                body{font-family:Arial,Helvetica,sans-serif;margin:20px;width:400px;}
+                label{display:block;margin-top:1em;font-weight:bold;}
+                textarea{width:100%;height:120px;}
+                button{margin-top:20px;padding:6px 14px;font-size:14px;}
+        </style>
+    </head>
+
+    <body>
+        <h2>Settings</h2>
+        <label><input type = "checkbox", id = "enable"> Enable the extension </label> 
+        <label>Mode
+            <select id = "mode">
+                <option value = "allow"> Allow List</option>
+                <option value = "block"> Block List</option>
+            </select> 
+        </label>
+
+        <label>Sites</label>
+        <textarea id = "sites"></textarea>
+         <!-- <label>Allowed Sites</label>
+         <textarea id = "allowedSites", placeholder="Enter one hostname per line, e.g. chat.openai.com"></textarea>
+         <label>Blocked Sites</label>
+         <textarea id = "blockedsites", placeholder="Enter one hostname per line, e.g. chat.openai.com"></textarea> -->
+        <button id = "save">Save</button>
+        <span id = "status"></span>
+        <script src = "options.js"></script>
+    </body>
+</html>
